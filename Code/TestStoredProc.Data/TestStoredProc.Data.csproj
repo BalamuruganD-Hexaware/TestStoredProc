@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\TestStoredProc.Entities\TestStoredProc.Entities.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0"/>
+    <PackageReference Include="Scrutor" Version="4.2.2"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0"/>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1"/>
+    <PackageReference Include="Dapper" Version="2.0.123"/>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+</Project>
